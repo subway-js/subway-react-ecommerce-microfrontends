@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Microfrontends example with SubwayJS" />
+    <title>SubwayJS - MicroFrontends</title>
+
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+
+    <!-- Subway framework -->
+    <script src="https://unpkg.com/@subway-js/subway@0.16.0/dist/subway.js"></script>
+  </head>
+
+  <!-- Microfrontends list -->
+  <script type="text/javascript">
+    Subway
+      .microFrontends()
+      .compose({
+        mfs: [
+          {
+            id: "MF_1",
+            src: "http://127.0.0.1:8080/mf_original_app/build/main.js",
+            domSelector: "mf1"
+          }
+        ]
+      });
+  </script>
+  <body>
+    <div id="mf1"></div>
+  </body>
+</html>
