@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 export function ImportedComponent(props) {
+  console.log('======== = = = = = = == = == ', props)
   const { mount = null, unmount = null } = (props || {})
   const _ref = useRef(null);
   useEffect(() => {

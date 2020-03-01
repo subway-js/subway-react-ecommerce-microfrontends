@@ -21,7 +21,8 @@ export const aggregateConfig = {
   evtHandlers,
   bootstrap: () => {
 
-    // publishComponent(AGGREGATE_NAME, "HeaderShoppingCartDropdown", HeaderShoppingCartDropdown);
+    // publishComponent(Subway.selectAggregate(AGGREGATE_NAME),
+    //   "HeaderShoppingCartDropdown", HeaderShoppingCartDropdown);
     Subway
       .selectAggregate(AGGREGATE_NAME)
       .publicChannel()

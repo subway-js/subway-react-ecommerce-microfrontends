@@ -26,17 +26,16 @@ export const initAggregates = aggregates => {
 
 
 export const publishComponent = (
-  publisherName, componentName, Component
+  publisherAggregate, componentName, component
 ) => {
-  Subway
-    .selectAggregate(publisherName)
+  const UIComponent = component;
+  publisherAggregate
     .publicChannel()
-    .publishComponent(componentName, {
-      mount: (props, container) => {
-        ReactDOM.render(<Component {...props} />, container);
+    .publishComponent(componentName,
+      (props, {container}) => {
+        ReactDOM.render(<UIComponent {...props} />, container);
       },
-      unmount: (container) => {
-          ReactDOM.unmountComponentAtNode(container);
-      }
-    });
+      ({container}) => {
+        ReactDOM.unmountComponentAtNode(container);
+      });
 };
