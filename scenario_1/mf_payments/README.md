@@ -4,18 +4,18 @@ It was bootstrapped with [Create React App](https://github.com/facebook/create-r
 
 #### Payments microfrontend
 
-This micro frontend implements the logic of the `shoppingCart` aggregate from the [ecommerce react website](https://github.com/subway-js/subway-react-ecommerce):
+This micro frontend implements the logic of the `shoppingCart` aggregate from the [ecommerce react website](https://github.com/subway-js/subway-react-ecommerce):
 
 - it creates the internal command and event handlers
 - it exposes the `ADD_TO_SHOPPING_CART` command, so that we can add products from the container application
 - it creates and exposes the **checkout page container** and the **shopping cart dropdown menu** used in the navigation bar
 
-The main difference with the [ecommerce react](https://github.com/subway-js/subway-react-ecommerce) shoppingCart source code is that now we are exporting all the UIs using the `publishComponent` SubwayJS API.
+The main difference with the [ecommerce react](https://github.com/subway-js/subway-react-ecommerce) shoppingCart source code is that now we are exporting all the UIs using the `publishComponent` SubwayJS API.
 
 
 #### Micro frontend configuration
 
-In the `src/index.js` file we uses the SubwayJS `microFrontends()` utils to install the payment micro service into the SubwayJS micro services app:
+In the `src/index.js` file we uses the SubwayJS `microFrontends()` utils to install the payment micro service into the SubwayJS micro services app:
 
 ```js
 Subway
@@ -33,6 +33,6 @@ Subway
 
 #### Copy the build file into the container folder
 
-The `container` application will load this micro frontend build at run time from his public folder (work in progress: this build should be published somewhere).
+The `container` application will load this micro frontend build at run time from his public folder (work in progress: this build should be published somewhere).
 
 - `cp build/mf_payments.js ../container/public/mfs/`
