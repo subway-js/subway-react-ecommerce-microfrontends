@@ -12,7 +12,7 @@ import {
 
 import { AGGREGATE_NAME as PRODUCTS_AGGREGATE_NAME } from "../../";
 
-import { useObserveAggregateState } from "../../../../subwayUtils/";
+import { useObserveAggregateState } from "@subway-js/subway-react";
 import { AddToCartButton } from "../components/addToCartButton";
 import { triggerAddToShoppingCart } from "../../commandCreators";
 

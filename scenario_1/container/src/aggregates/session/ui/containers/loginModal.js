@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Header, Icon, Modal, Form } from "semantic-ui-react";
-import { useObserveAggregateState } from "../../../../subwayUtils";
+import { useObserveAggregateState } from "@subway-js/subway-react";
 import {
   hideLoginScreen,
   simulateLogin

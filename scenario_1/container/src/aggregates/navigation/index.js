@@ -1,4 +1,4 @@
-import { Subway } from "../../subwayUtils/";
+import { Subway } from "@subway-js/subway-react";
 
 import { Events } from "./verbs/events";
 import { PublicCommands } from "./verbs/public";

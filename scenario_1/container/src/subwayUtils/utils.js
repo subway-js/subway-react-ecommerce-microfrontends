@@ -1,4 +1,4 @@
-import { Subway } from "./";
+import { Subway } from "@subway-js/subway-react";
 
 export const initHandlers = (aggregate, cmdHandlers, evtHandlers) => {
   cmdHandlers &&

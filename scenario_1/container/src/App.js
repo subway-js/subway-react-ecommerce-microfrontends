@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container } from "semantic-ui-react";
-import { Subway } from "./subwayUtils";
-import { useObserveAggregateState, useConsumeComponent, ImportedComponent } from "./subwayUtils/";
+import { Subway } from "@subway-js/subway-react";
+import { useObserveAggregateState, useConsumeComponent } from "@subway-js/subway-react";
 
 import { Navbar, Breadcrumbs } from "./aggregates/navigation";
 import { ProductList, ProductDetails, Disclaimer } from "./aggregates/products";

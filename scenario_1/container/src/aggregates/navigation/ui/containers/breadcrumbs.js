@@ -2,9 +2,8 @@ import React from "react";
 import { Breadcrumb, Button, Grid } from "semantic-ui-react";
 
 import {
-  useSpyAggregateEvent,
   useObserveAggregateState
-} from "../../../../subwayUtils/";
+} from "@subway-js/subway-react";
 import { selectHomePage } from "../../commandCreators";
 
 import { AGGREGATE_NAME as NAVIGATION_AGGREGATE_NAME } from "../../";

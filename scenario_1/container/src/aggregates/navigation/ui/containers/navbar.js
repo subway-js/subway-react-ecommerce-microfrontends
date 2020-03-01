@@ -9,7 +9,7 @@ import {
   Icon,
   Divider
 } from "semantic-ui-react";
-import { useObserveAggregateState, useReactToEvent } from "../../../../subwayUtils";
+import { useObserveAggregateState, useReactToEvent } from "@subway-js/subway-react";
 import { showLoginScreen, logout } from "../../commandCreators";
 
 import { AGGREGATE_NAME as NAVIGATION_AGGREGATE_NAME } from "../../";
