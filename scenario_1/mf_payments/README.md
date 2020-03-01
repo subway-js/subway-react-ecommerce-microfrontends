@@ -25,6 +25,10 @@ Subway
   });
 ```
 
+A `build.js` file has been added to override the default `create-react-app` build behavior, as we need one single javascript file for the micro frontend to be exposed.
+
+*(Todo: tune build and avoid including react etc. in the distribution build)*
+
 #### Build the micro frontend
 
 - `npm install`
