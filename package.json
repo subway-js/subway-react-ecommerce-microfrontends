@@ -1,10 +1,11 @@
 {
   "name": "subway-react-ecommerce-microfrontends",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subway-js/subway-react-ecommerce-microfrontends.git"
   },
+  "description": "This project is a work in progress proof of concept for [SubwayJS](https://github.com/subway-js/subway) micro frontends with react.",
   "author": "Danilo Rossi <contact@danilorossi.me> (http://danilorossi.me/)",
   "license": "MIT"
 }

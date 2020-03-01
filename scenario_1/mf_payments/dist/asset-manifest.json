@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/subway-react-ecommerce/main.js",
+    "main.js.map": "/subway-react-ecommerce/main.js.map",
+    "index.html": "/subway-react-ecommerce/index.html",
+    "main.js.LICENSE.txt": "/subway-react-ecommerce/main.js.LICENSE.txt",
+    "precache-manifest.ac7862fadbb9579095bdefdea8c86736.js": "/subway-react-ecommerce/precache-manifest.ac7862fadbb9579095bdefdea8c86736.js",
+    "service-worker.js": "/subway-react-ecommerce/service-worker.js"
+  },
+  "entrypoints": [
+    "main.js"
+  ]
+}

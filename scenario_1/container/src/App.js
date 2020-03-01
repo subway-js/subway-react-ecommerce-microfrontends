@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container } from "semantic-ui-react";
 import { Subway } from "./subwayUtils";
-import { useObserveAggregateState } from "./subwayUtils/";
+import { useObserveAggregateState, useConsumeComponent, ImportedComponent } from "./subwayUtils/";
 
 import { Navbar, Breadcrumbs } from "./aggregates/navigation";
 import { ProductList, ProductDetails, Disclaimer } from "./aggregates/products";
-import { Checkout } from "./aggregates/shoppingCart";
+// import { Checkout } from "./aggregates/shoppingCart";
 
 import { LoginModal } from "./aggregates/session";
 function App() {
@@ -14,10 +14,9 @@ function App() {
     aggregateState => aggregateState.currentPage
   );
 
-  const importedComponent = Subway.selectAggregate(
-    "ShoppingCartAggregate"
-  ).publicChannel().getComponent("HeaderShoppingCartDropdown");
-  const HeaderShoppingCartDropdown = importedComponent.factoryFunction();
+  const CheckoutPage = useConsumeComponent("ShoppingCartAggregate", "Checkout")
+  const HeaderShoppingCartDropdown = useConsumeComponent("ShoppingCartAggregate", "HeaderShoppingCartDropdown")
+
 
   return (
     <div style={{ background: "#f8f9fa" }}>
@@ -33,7 +32,7 @@ function App() {
         <br />
         {(!currentPage || currentPage === "home") && <ProductList />}
         {currentPage === "product" && <ProductDetails />}
-        {currentPage === "checkout" && <Checkout />}
+        {currentPage === "checkout" && CheckoutPage /*<div id="checkout2"></div>*/}
 
         <Disclaimer />
       </Container>
