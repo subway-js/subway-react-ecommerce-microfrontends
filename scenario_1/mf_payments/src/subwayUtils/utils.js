@@ -1,4 +1,4 @@
-import { Subway } from "./";
+import { Subway } from "@subway-js/subway-react";
 import { React } from 'react';
 import ReactDOM from "react-dom";
 

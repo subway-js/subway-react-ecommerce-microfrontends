@@ -1,7 +1,9 @@
 {
   "name": "mf_payments",
   "version": "0.1.0",
-  "dependencies": {},
+  "dependencies": {
+    "@subway-js/subway-react": "0.1.2"
+  },
   "devDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

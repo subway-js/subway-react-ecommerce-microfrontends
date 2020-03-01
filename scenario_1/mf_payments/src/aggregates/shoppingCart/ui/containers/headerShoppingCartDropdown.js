@@ -9,7 +9,7 @@ import {
   Label
 } from "semantic-ui-react";
 import { AGGREGATE_NAME as SHOPPING_CART_AGGREGATE_NAME } from "../../";
-import { useObserveAggregateState } from "../../../../subwayUtils/";
+import { useObserveAggregateState } from "@subway-js/subway-react";
 import { goToCheckout } from "../../commandCreators";
 
 export function HeaderShoppingCartDropdown() {

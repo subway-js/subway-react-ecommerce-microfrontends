@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 
-import { Subway, publishComponent } from "../../subwayUtils/";
+import { Subway } from "@subway-js/subway-react";
+import { publishComponent } from "../../subwayUtils/";
 
 import { Events } from "./verbs/events";
 import { PublicCommands } from "./verbs/public";

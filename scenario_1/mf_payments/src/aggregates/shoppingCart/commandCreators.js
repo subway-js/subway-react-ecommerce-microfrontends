@@ -1,6 +1,6 @@
 import { AGGREGATE_NAME } from "./index";
 import { Commands } from "./verbs/commands";
-import { Subway } from "../../subwayUtils/";
+import { Subway } from "@subway-js/subway-react";
 
 export const addProductToCart = product => {
   Subway.selectAggregate(AGGREGATE_NAME).command(

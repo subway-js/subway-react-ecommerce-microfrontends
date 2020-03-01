@@ -13,7 +13,7 @@ import { AGGREGATE_NAME as SHOPPING_CART_AGGREGATE_NAME } from "../../";
 import {
   useObserveAggregateState,
   useReactToEvent
-} from "../../../../subwayUtils/";
+} from "@subway-js/subway-react";
 import { showLoginScreen, submitSuccessfulOrder } from "../../commandCreators";
 
 export function Checkout() {

@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
-import { Subway, initAggregates } from "./subwayUtils";
+import { Subway } from "@subway-js/subway-react";
+import { initAggregates } from "./subwayUtils";
+
 import { aggregateConfig as shoppingCartAggregateConfig } from "./aggregates/shoppingCart";
 
 Subway.microFrontends().install('payments', ({ domSelector }) => {
